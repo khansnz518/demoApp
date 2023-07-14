@@ -10,11 +10,27 @@ function MyStack() {
     <Stack.Navigator screenOptions={{
         // headerShown : false
     }}>
-      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Home" component={Home}
+      // options={{
+      //   headerLeft: () => (
+      //     <Button
+      //       title="Menu"
+      //       size={24}
+      //       color="black"
+      //       style={{ marginLeft: 10 }}
+      //       onPress={() => {
+      //         // Handle the back button press event
+      //       }}
+      //     />
+      //   ),
+      // }} 
+      />
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Reminder" component={Reminder} />
       {/* <Stack.Screen name="Settings" component={Settings} /> */}
     </Stack.Navigator>
+
   );
-}
+  
+  }
 export default MyStack ;
