@@ -7,14 +7,15 @@ import {
   Keyboard,
 } from "react-native";
 import React, { useEffect, useState } from "react";
-import Main from "../components/screens/main";
+import Main from "../components/screens/mainScreen";
+import Animation from "../components/screens/Animation";
 
 const HomeScreen = () => {
   const [selectTab, setSelectTab] = useState(0);
 
   return (
     <View style={styles.container}>
-      {selectTab == 0 ? <Main/> :null}
+      {selectTab == 0 ? <Main/> : <Animation />}
       <View style={styles.bottomView}>
         <TouchableOpacity
           style={styles.bottomTab}

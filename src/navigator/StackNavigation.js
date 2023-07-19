@@ -11,6 +11,7 @@ function MyStack() {
         // headerShown : false
     }}>
       <Stack.Screen name="Home" component={Home}
+      options={{headerShown:false}}
       // options={{
       //   headerLeft: () => (
       //     <Button
